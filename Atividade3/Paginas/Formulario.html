@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Hospitalar</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../Style.css">
+<link rel="icon" href="../icones/token_24dp_EAC452_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon" >
+
+<!--Cabeçário da Página-->
+<body>
+<header>
+    <h1>FORMULÁRIO HOSPITALAR</h1> 
+    <p><a href="#"><img src="../icones/token_24dp_EAC452_FILL0_wght400_GRAD0_opsz24.png">
+    </a></p>
+</header>
+
+<!--Separador 1-->
+<div class="separador"> 
+    <h2>Informações do Paciente</h2>
+</div>
+
+<!--Formulário do Paciente -->
+<form action="#" method="post">
+    <div class="form1-div1">
+    <p>Nome: <input type="text" name="Nome" placeholder="Digite Seu Nome" size="60" required/></p> 
+    <br>
+    <p>Telefone:<input type="tel" placeholder="(00) 00000-0000" maxlength="11" required/></p>
+    </div>
+    <div class="form1-div2">
+    <p>Data de Nascimento:<input type="date" required/></p>
+    <br>
+    <p>Email: <input type="email" placeholder="Exemplo@email.com" required/></p>
+    </div>
+</form>
+
+<!--Separador 2-->
+<div class="separador"> 
+    <h2>Informações do Contato de Emergência</h2>
+</div>
+
+<!--Formulário do Acompanhante-->
+<form action="#" method="post">
+    <div class="form2">
+        <p>Nome: <input type="text" name="Nome" placeholder="Digite Seu Nome" size="60"/></p>
+        <br>
+        <p>Relção com o Paciente: <input type="text" name="relação" placeholder="relação" size="20"></p>
+        <br>
+        <p>Telefone:<input type="tel" placeholder="(00) 00000-0000" maxlength="11"/></p>
+    </div>
+</form>
+
+<!--Separador 3-->
+<div class="separador"> 
+    <h2>Informações Sobre o Plano de Saúde</h2>
+</div>
+
+<form action="#" method="post">
+    <div class="form2">
+        <p>Informações do Provedor: <input type="text" placeholder="seguro" ></p>
+        <p>Número da Apólice: <input type="text" placeholder="0000.0000.0000.0000-0"></p>
+    </div>
+</form>
+
+<!--Separador 4-->
+<div class="separador"> 
+    <h2>Histórico Médico</h2>
+</div>
+
+<!--Estrutura de Opções-->
+<div class="form2">
+    <fieldset >
+ <legend> Responda o Formulário Abaixo:</legend>
+<p>Voçê já teve alguma das seguintes condições? (marque todas que se aplicam).</p>
+<br>
+<p><input type="checkbox" value="Diabetes"/> Diabetes;
+    <br> 
+    <input type="checkbox" value="Hipertensão"/> Hipertensão;
+    <br> 
+    <input type="checkbox" value="Asma"/> Asma; 
+    <br>
+    <input type="checkbox" value="Câncer"/> Câncer.
+   </p>
+   <br>
+        <p>Tem alguma alergia ? Se "sim", por favor liste:</p>
+        <input type="radio" name="quest" value="sim"/> Sim <input type="radio" name="quest" value="Nâo"/> Nâo
+        <br>
+        <textarea rows="1" cols="40">
+        </textarea>
+        <p>Voçê está tomando algum remédio ? Caso "afirmativo", por favor liste:</p>
+        <input type="radio" name="quest1" value="sim"/> Sim <input type="radio" name="quest1" value="Nâo"/> Nâo
+        <br>
+        <textarea rows="1" cols="40">
+        </textarea>
+        <br>
+        <br>
+</div>
+</fieldset>
+<!--Separador 4-->
+<div class="separador"> 
+    <h2>Objetivo da Visita</h2>
+</div>
+
+
+<div class="form2">
+    <p>Descreva seus sintomas ou reaçôes para esta visita:</p>
+    <textarea rows="5" cols="60">
+    </textarea>
+</div>
+<br>
+
+<!--Botôes-->
+<input class="botao" type="submit" value="ENVIAR">
+<input class="botao" type="reset" value="REFAZER">
+<br>
+<br>
+
+<!--Rodapé-->>
+<footer class="rodape" id="contato">
+    <div class="rodape-div">
+        <!--Coluna 01-->
+        <div class="rodape-div-1">
+        <div class="rodape-div-1-coluna">
+          <span>Hospital Family</span>
+          <p>Cadastre-se</p>  
+          <p>Cartâo Family</p>  
+          <p><a href="#">Mapa</a></p>  
+        </div>
+        </div>
+        <!--Coluna 02-->
+            <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+              <span>Ajuda</span>
+              <p>Dúvidas</p>  
+              <p>Agendas</p>  
+              <p>Consulta</p>  
+            </div>
+            </div>
+            <!--Coluna 03-->
+            <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+              <span>Sobre o Hospital Family</span>
+              <p>Propósito</p>  
+              <p>Sustentabilidade</p>  
+              <p>Quem Nós Somos</p>  
+            </div>
+            </div>
+            <!--Coluna 04-->
+            <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+              <span>Redes Sociais</span>
+              <p> <a href="#"><img src="../icones/instagram-icone-icon.png" width="30px"></a></p>  
+              <p><a href="#"><img src="../icones/instagram-icone-icon.png" width="30px"></a></p>  
+              <p><a href="#"><img src="../icones/youtube.png" width="30px"></a></p>  
+            </div>
+            </div>
+    </div>
+</footer>
+<footer class="rodape">
+    <h2>Copyright&copy; 2025</h2>
+    <br>
+    <p><img src="../icones/token_24dp_EAC452_FILL0_wght400_GRAD0_opsz24.png"></p>
+</footer>
+</body>
+</html>
